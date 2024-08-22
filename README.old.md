@@ -1,2 +1,2 @@
-# react_mod_usip
-usip_mod 7 2024
+# desarrollo-frontend-react
+DESARROLLO FRONTEND CON REACT MOD7 2024

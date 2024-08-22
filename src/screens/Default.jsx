@@ -1,18 +1,26 @@
-import Logo from "./_components/Logo";
-import Description from "./_components/Description";
-import OpenLink from "../components/OpenLink";
-import Lessoninfo from "./_components/Lessoninfo";
+import Logo from './Default/_components/Logo';
+import Description from "./Default/_components/Description";
+import OpenLink from '../components/OpenLink';
+import Contador from "./Default/_components/Contador";
 
-const Default=()=>{
+const Default = () => {
     return (
         <>
-            <Logo/>
-            <Description/>
-            <OpenLink  title = "Learn React" url="https://reactjs.org"/>
-            <OpenLink  title = "MI repositorio GitHub" url="https://github.com/EfraStm/react_mod_usip"/>
-            <Lessoninfo numero="1:" titulo="titulo 1"/>
-            <Lessoninfo numero="2:" titulo="titulo 2"/>
+            <header className="App-header">
+                <Contador />
+                <Logo />
+                <Description />
+                <OpenLink
+                    title="Learn React"
+                    url="https://react.dev/"
+                />
+                <OpenLink
+                    title="Mi proyecto react (Github)"
+                    url="https://github.com/dheeyi/desarrollo-frontend-react"
+                />
+            </header>
         </>
-    )
+    );
 };
+
 export default Default;
